@@ -115,4 +115,27 @@
         </a>
     </div>
 </body>
+    
+<img id="full-size-image" src="image.jpg" />
+
+
+
+
+#full-size-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+
+
+const image = document.getElementById('full-size-image');
+
+// Optional: Add event listener to resize image on window resize
+window.addEventListener('resize', () => {
+  image.style.width = '100%';
+  image.style.height = '100vh';
+});
+
 </html>
